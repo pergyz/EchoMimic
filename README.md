@@ -163,7 +163,9 @@ Install packages with `pip`
 ### Download ffmpeg-static
 Download and decompress [ffmpeg-static](https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-4.4-amd64-static.tar.xz), then
 ```
-export FFMPEG_PATH=/path/to/ffmpeg-4.4-amd64-static
+wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+tar -xJf ffmpeg-release-amd64-static.tar.xz
+export FFMPEG_PATH=/home/user/ffmpeg-7.0.2-amd64-static
 ```
 
 ### Download pretrained weights
