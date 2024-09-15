@@ -150,6 +150,7 @@ Create conda environment (Recommended):
 ```bash
   conda create -n echomimic python=3.8
   conda activate echomimic
+  conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 
 Install packages with `pip`
