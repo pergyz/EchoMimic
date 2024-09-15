@@ -148,7 +148,9 @@ Terminal Technology Department, Alipay, Ant Group.
 Create conda environment (Recommended):
 
 ```bash
-  conda create -n echomimic python=3.8
+  wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
+  sh Anaconda3-2024.06-1-Linux-x86_64.sh
+  conda create -n echomimic python=3.11
   conda activate echomimic
   conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
@@ -167,6 +169,8 @@ export FFMPEG_PATH=/path/to/ffmpeg-4.4-amd64-static
 ### Download pretrained weights
 
 ```shell
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt update && sudo apt install git-lfs
 git lfs install
 git clone https://huggingface.co/BadToBest/EchoMimic pretrained_weights
 ```
